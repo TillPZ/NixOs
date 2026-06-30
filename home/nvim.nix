@@ -11,6 +11,7 @@
     lazygit
     fzf
     nodejs         # diverse Tools/LSPs erwarten node
+    tree-sitter
 
     # Lua (LazyVim editiert man selbst in Lua):
     lua-language-server

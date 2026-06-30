@@ -3,6 +3,7 @@
   imports = [ 
     ./home/vivado_2024_2.nix
     ./home/vivado_2026_1.nix
+    ./home/nvim.nix
   ]; 
   home.username = "till";
   home.homeDirectory = "/home/till";
