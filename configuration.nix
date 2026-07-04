@@ -9,6 +9,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./modules/sway-system.nix
       #<home-manager/nixos>
     ];
 

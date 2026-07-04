@@ -5,7 +5,9 @@
     ./home/vivado_2026_1.nix
     ./home/nvim.nix
     ./home/starship.nix
-  ]; 
+    ./home/sway.nix
+    ./home/music.nix
+  ];
   home.username = "till";
   home.homeDirectory = "/home/till";
   home.stateVersion = "26.05";

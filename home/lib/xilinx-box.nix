@@ -1,7 +1,8 @@
-{ slug, version, image, extraInitHooks ? "", vivadoIcon ? null, vitisIcon ? null }:
+{ slug, version, image, packages, extraInitHooks ? "", vivadoIcon ? null, vitisIcon ? null }:
 { pkgs, ... }:
 let
   box = "vivado_${slug}";
+  pkgList = pkgs.lib.concatStringsSep " " packages;
 
   guiEnv = ''
     export _JAVA_AWT_WM_NONREPARENTING=1
@@ -31,10 +32,7 @@ in
     root=false
     replace=true
     volume="/tools/Xilinx:/tools/Xilinx /home/till/dev:/home/till/dev"
-    additional_packages="locales libncurses5 libstdc++6"
-    additional_packages="libx11-6 libxext6 libxrender1 libxtst6 libxi6"
-    additional_packages="libfreetype6 libfontconfig1 libnss3 libasound2"
-    additional_packages="libcrypt1 libyaml-0-2 graphviz default-jre"
+    additional_packages="${pkgList}"
     init_hooks="locale-gen en_US.UTF-8 || true${extraInitHooks}"
   '';
 
