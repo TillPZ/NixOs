@@ -1,13 +1,13 @@
 { pkgs,  ... }:
 { 
   imports = [ 
-    ./vivado_2024_2.nix
-    ./vivado_2026_1.nix
-    ./nvim.nix
-    ./starship.nix
-    ./sway.nix
-    ./music.nix
-    ./scripts.nix
+    ./modules/vivado_2024_2.nix
+    ./modules/vivado_2026_1.nix
+    ./modules/nvim.nix
+    ./modules/starship.nix
+    ./modules/sway.nix
+    ./modules/music.nix
+    ./modules/scripts.nix
     ./modules/cli.nix
   ];
   home.username = "till";
