@@ -5,7 +5,7 @@
     enableFishIntegration = true;   # bei zsh/fish entsprechend umstellen
 
     settings = {
-      add_newline = false;
+      add_newline = true;
 
       format =
         "[](surface0)$username[](bg:surface1 fg:surface0)$directory[](fg:surface1)";
@@ -36,7 +36,7 @@
           "Downloads" = " ";
           "Music" = "󰝚 ";
           "Pictures" = " ";
-          "Developer" = "󰲋 ";
+          "dev" = "󰲋 ";
         };
 
 

@@ -1,0 +1,32 @@
+19:04:21 INFO  : updated workspace path: 
+19:04:21 INFO  : bash, -c, source /tools/Xilinx/Vitis/2024.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2024.2/data/embeddedsw/scripts/pyesw//repo.py -st  /tools/Xilinx/Vitis/2024.2/data/embeddedsw && deactivate
+19:04:24 INFO  : Successfully created repository data at /tmp/rigel_lopper_till1313326178754926895
+19:04:24 INFO  : bash, -c, source /tools/Xilinx/Vitis/2024.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2024.2/data/embeddedsw/scripts/pyesw//get_template_data.py -d /tmp/rigel_lopper_till14995542262248155194 -r /tmp/rigel_lopper_till1313326178754926895/.repo.yaml && deactivate
+19:04:24 INFO  : Embedded Template List generated successfully
+19:24:28 INFO  : Terminating Vitis C++ Server
+19:44:27 INFO  : updated workspace path: 
+19:44:27 INFO  : bash, -c, source /tools/Xilinx/Vitis/2024.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2024.2/data/embeddedsw/scripts/pyesw//repo.py -st  /tools/Xilinx/Vitis/2024.2/data/embeddedsw && deactivate
+19:44:28 INFO  : Successfully created repository data at /tmp/rigel_lopper_till17243388071210738200
+19:44:28 INFO  : bash, -c, source /tools/Xilinx/Vitis/2024.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2024.2/data/embeddedsw/scripts/pyesw//get_template_data.py -d /tmp/rigel_lopper_till6277934267015316865 -r /tmp/rigel_lopper_till17243388071210738200/.repo.yaml && deactivate
+19:44:28 INFO  : Embedded Template List generated successfully
+20:21:00 INFO  : Terminating Vitis C++ Server
+20:29:49 INFO  : updated workspace path: 
+20:29:49 INFO  : bash, -c, source /tools/Xilinx/Vitis/2024.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2024.2/data/embeddedsw/scripts/pyesw//repo.py -st  /tools/Xilinx/Vitis/2024.2/data/embeddedsw && deactivate
+20:29:50 INFO  : Successfully created repository data at /tmp/rigel_lopper_till4871931102507219123
+20:29:50 INFO  : bash, -c, source /tools/Xilinx/Vitis/2024.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2024.2/data/embeddedsw/scripts/pyesw//get_template_data.py -d /tmp/rigel_lopper_till3352412290529994619 -r /tmp/rigel_lopper_till4871931102507219123/.repo.yaml && deactivate
+20:29:51 INFO  : Embedded Template List generated successfully
+20:30:02 INFO  : Terminating Vitis C++ Server
+20:30:02 INFO  : Vitis C++ Server terminated
+20:42:00 INFO  : updated workspace path: 
+20:42:00 INFO  : bash, -c, source /tools/Xilinx/Vitis/2024.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2024.2/data/embeddedsw/scripts/pyesw//repo.py -st  /tools/Xilinx/Vitis/2024.2/data/embeddedsw && deactivate
+20:42:02 INFO  : Successfully created repository data at /tmp/rigel_lopper_till15700907723399369409
+20:42:02 INFO  : bash, -c, source /tools/Xilinx/Vitis/2024.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2024.2/data/embeddedsw/scripts/pyesw//get_template_data.py -d /tmp/rigel_lopper_till14980803789955563332 -r /tmp/rigel_lopper_till15700907723399369409/.repo.yaml && deactivate
+20:42:02 INFO  : Embedded Template List generated successfully
+20:42:37 INFO  : Terminating Vitis C++ Server
+20:42:38 INFO  : Vitis C++ Server terminated
+21:04:43 INFO  : updated workspace path: 
+21:04:43 INFO  : bash, -c, source /tools/Xilinx/Vitis/2024.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2024.2/data/embeddedsw/scripts/pyesw//repo.py -st  /tools/Xilinx/Vitis/2024.2/data/embeddedsw && deactivate
+21:04:45 INFO  : Successfully created repository data at /tmp/rigel_lopper_till4197923960470134445
+21:04:45 INFO  : bash, -c, source /tools/Xilinx/Vitis/2024.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2024.2/data/embeddedsw/scripts/pyesw//get_template_data.py -d /tmp/rigel_lopper_till4328687749803213080 -r /tmp/rigel_lopper_till4197923960470134445/.repo.yaml && deactivate
+21:04:45 INFO  : Embedded Template List generated successfully
+21:04:53 INFO  : Terminating Vitis C++ Server
