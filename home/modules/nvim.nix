@@ -4,13 +4,13 @@
     neovim
 
     # Basis, die LazyVim/Treesitter braucht:
-    gcc            # Treesitter-Parser kompilieren
+    gcc # Treesitter-Parser kompilieren
     git
     ripgrep
     fd
     lazygit
     fzf
-    nodejs         # diverse Tools/LSPs erwarten node
+    nodejs # diverse Tools/LSPs erwarten node
     tree-sitter
 
     # Lua (LazyVim editiert man selbst in Lua):
@@ -18,7 +18,7 @@
     stylua
 
     # C:
-    clang-tools    # clangd + clang-format
+    clang-tools # clangd + clang-format
 
     # Rust:
     rust-analyzer
@@ -37,6 +37,12 @@
 
     # SystemVerilog (Verible: LS + Formatter + Linter):
     verible
-    svls          # Alternative/zusätzlicher SV-LS, optional
+    svls # Alternative/zusätzlicher SV-LS, optional
+
+    # ...bestehende...
+    nixfmt # liefert das Binary 'nixfmt'
+    shfmt # Shell-Scripte — deine fuzzel-Menüs
+    prettier # Markdown/JSON/YAML
+    markdown-toc # nur falls du TOC-Marker in READMEs nutzen willst
   ];
 }

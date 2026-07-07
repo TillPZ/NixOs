@@ -1,9 +1,11 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   programs.btop.enable = true;
 
   home.packages = with pkgs; [
+    glow
     tio
-    # künftige CLI-Werkzeuge hierher
+    alejandra
+    statix       # Nix-Linter (Anti-Pattern-Checks)
+    nixd         # falls noch kein Nix-LSP da ist — siehe unten
   ];
 }

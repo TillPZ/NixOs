@@ -81,36 +81,37 @@
   users.users."till" = {
     isNormalUser = true;
     description = "Till";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "dialout" ];
     packages = with pkgs; [
-    #  thunderbird
+      #  thunderbird
     ];
   };
 
   # Install firefox.
-  programs.firefox.enable = true;
+  #programs.firefox.enable = true;
 
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-     wget
-     git
-     vim
-     distrobox
-     neovim
-     distrobox
-     git
-     gnumake
-     gcc
-     ripgrep
-     unzip
-     eza
-     fd
-     vscode
-
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
+    wget
+    git
+    vim
+    distrobox
+    neovim
+    distrobox
+    git
+    gnumake
+    gcc
+    ripgrep
+    unzip
+    eza
+    fd
+    vscode
+    markdownlint-cli2
+    #nodePackages.typescript  # (Sicherheitshalber für globale Node-Pfade)
+    #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    #  wget
   ];
 
   # 2. Nerd Fonts installieren (Moderne Syntax ab NixOS 24.11 / 25.05)
@@ -156,5 +157,5 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
 
-# hierher wandern die geteilten Zeilen
+  # hierher wandern die geteilten Zeilen
 }

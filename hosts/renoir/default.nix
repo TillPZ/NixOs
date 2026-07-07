@@ -4,16 +4,17 @@
 
 { config, pkgs, ... }:
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  boot.initrd.luks.devices."luks-d333bd83-affe-4e99-9123-60081b678914".device = "/dev/disk/by-uuid/d333bd83-affe-4e99-9123-60081b678914";
+  boot.initrd.luks.devices."luks-d333bd83-affe-4e99-9123-60081b678914".device =
+    "/dev/disk/by-uuid/d333bd83-affe-4e99-9123-60081b678914";
   networking.hostName = "renoir"; # Define your hostname.
 
   # Allow unfree packages
@@ -21,5 +22,14 @@
 
   system.stateVersion = "26.05"; # Did you read the comment?
 
-
-} 
+  fileSystems."/home/till/ramdisk" = {
+    device = "tmpfs";
+    fsType = "tmpfs";
+    options = [
+      "mode=700"
+      "size=2G"
+      "uid=till"
+      "gid=users"
+    ];
+  };
+}

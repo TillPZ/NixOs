@@ -52,6 +52,13 @@ let
     
     ${builtins.readFile ./scripts/fuzzel-control.sh}
   '';
+
+  passmenu = pkgs.writeShellScriptBin "passmenu" ''
+    entry=$(rbw list | ${pkgs.fuzzel}/bin/fuzzel --dmenu)
+    [ -n "$entry" ] && rbw get "$entry" | ${pkgs.wl-clipboard}/bin/wl-copy
+  '';
+
+
 in
 {
   home.packages = [ fuzzel-audio fuzzel-bluetooth fuzzel-network fuzzel-disk fuzzel-control ];
@@ -63,4 +70,13 @@ in
     terminal = false;
     categories = [ "Utility" "Settings" ];
   };
+
+  xdg.desktopEntries.passmenu = {
+    name = "Password Manager";
+    exec = "passemnu";
+    terminal = false;
+  };
+
+
+
 }
