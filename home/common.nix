@@ -46,6 +46,11 @@
     };
   };
 
+  # In Ihrer home-manager Konfiguration für den Benutzer "till":
+  services.syncthing = {
+    enable = true;
+  };
+
   home.packages = with pkgs; [
     ripgrep
     fd
@@ -78,6 +83,10 @@
     database_1 = ~/sync/keepass/Passwords.kdbx
     pw_cache_period_min = 60
     type_library = wtype
+
+    [type]
+    # Öffnet nach der Auswahl ein Untermenü (Autotype, Password, Username...)
+    type_url = True
   '';
 
   catppuccin = {

@@ -87,6 +87,7 @@ in
         "${mod}+Shift+n" = "exec makoctl dismiss --all"; # alle weg
         "${mod}+p" = "exec keepmenu";
         "${mod}+Shift+p" = "[app_id=\"org.keepassxc.KeePassXC\"] scratchpad show";
+        "${mod}+o" = "exec keepmenu -a \"{PASSWORD}{ENTER}\"";
         #"${mod}+q" = "kill";
         #"${mod}+e" = "exec thunar";
         "${mod}+m" = "[app_id=\"music\"] scratchpad show";
@@ -302,6 +303,16 @@ in
       #workspaces button.focused { background: #45475a; }
       #clock, #network, #pulseaudio,  #bluetooth, #tray, #mpris, #cpu, #temperature, #memory { padding: 0 6px; font-size: 14px }
     '';
+  };
+
+  services.swayidle = {
+    enable = true;
+    events = [
+      {
+        event = "before-sleep";
+        command = "${pkgs.swaylock}/bin/swaylock -f";
+      }
+    ];
   };
 
   services.mako = lib.mkDefault {
