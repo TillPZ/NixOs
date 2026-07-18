@@ -1,12 +1,10 @@
 { pkgs, ... }:
 {
 
-  imports =
-    [ # Include the results of the hardware scan.
-      ../modules/sway-system.nix
-    ];
-
-
+  imports = [
+    # Include the results of the hardware scan.
+    ../modules/sway-system.nix
+  ];
 
   # Enable networking
   networking.networkmanager.enable = true;
@@ -29,12 +27,11 @@
     LC_TIME = "de_DE.UTF-8";
   };
 
-
   # Enable hardware graphics acceleration
   hardware.graphics = {
     enable = true;
     # Extra packages based on your GPU (e.g., intel-media-driver, nvidia-vaapi-driver)
-    # extraPackages = with pkgs; [ intel-media-driver nvidia-vaapi-driver ]; 
+    # extraPackages = with pkgs; [ intel-media-driver nvidia-vaapi-driver ];
   };
 
   services.libinput.enable = true;
@@ -81,7 +78,11 @@
   users.users."till" = {
     isNormalUser = true;
     description = "Till";
-    extraGroups = [ "networkmanager" "wheel" "dialout" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "dialout"
+    ];
     packages = with pkgs; [
       #  thunderbird
     ];
@@ -89,7 +90,6 @@
 
   # Install firefox.
   #programs.firefox.enable = true;
-
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -109,6 +109,7 @@
     fd
     vscode
     markdownlint-cli2
+    parted
     #nodePackages.typescript  # (Sicherheitshalber für globale Node-Pfade)
     #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     #  wget
@@ -154,8 +155,10 @@
   ];
   # =========================================================================
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   # hierher wandern die geteilten Zeilen
 }
