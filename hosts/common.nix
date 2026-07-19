@@ -71,6 +71,19 @@
     #media-session.enable = true;
   };
 
+  services.openssh = {
+    enable = true;
+    openFirewall = true;
+    settings = {
+      PasswordAuthentication = false;
+      KbdInteractiveAuthentication = false;
+      PermitRootLogin = "no";
+      AllowUsers = [ "myUser" ];
+      MaxAuthTries = 3;
+      PerSourcePenalties = "crash:3600s authfail:3600s max:86400s";
+    };
+  };
+
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
@@ -110,9 +123,8 @@
     vscode
     markdownlint-cli2
     parted
-    #nodePackages.typescript  # (Sicherheitshalber für globale Node-Pfade)
-    #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    #  wget
+    bind
+    nmap
   ];
 
   # 2. Nerd Fonts installieren (Moderne Syntax ab NixOS 24.11 / 25.05)
