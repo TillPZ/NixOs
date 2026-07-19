@@ -40,10 +40,8 @@
 
   programs.git = {
     enable = true;
-    settings.user = {
-      userName = "Till";
-      userEmail = "coredump@segfault.eu";
-    };
+    userName = "till";
+    userEmail = "coredump@segfault.eu";
   };
 
   # In Ihrer home-manager Konfiguration für den Benutzer "till":

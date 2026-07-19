@@ -29,7 +29,8 @@
         };
     in {
       nixosConfigurations = {
-        renoir    = mkHost ./hosts/renoir    ./home/renoir.nix;
+        renoir     = mkHost ./hosts/renoir     ./home/renoir.nix;
+        strix-halo = mkHost ./hosts/strix-halo ./home/strix-halo.nix;
       };
     };
 }
